@@ -5,18 +5,6 @@
     android:background="@color/colorAccent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<EditText
-    android:id="@+id/etName"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="32dp"
-    android:layout_marginRight="32dp"
-    android:hint="Name"
-    android:textColorHint="@color/colorPrimaryDark"
-    android:textSize="24sp"
-    android:textColor="@color/white"
-    android:layout_marginTop="16dp"/>
-
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
@@ -26,10 +14,10 @@
         android:inputType="textEmailAddress"
         android:hint="Email"
         android:textColorHint="@color/colorPrimaryDark"
-        android:layout_below="@+id/etName"
         android:textSize="24sp"
         android:textColor="@color/white"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -43,32 +31,19 @@
         android:layout_below="@+id/etEmail"
         android:textSize="24sp"
         android:textColor="@color/white"
-        android:layout_marginTop="16dp"/>
-
-    <EditText
-        android:id="@+id/etConfirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:hint="Confirm Password"
-        android:textColorHint="@color/colorPrimaryDark"
-        android:inputType="textPassword"
-        android:layout_below="@+id/etPassword"
-        android:textSize="24sp"
-        android:textColor="@color/white"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:autofillHints="" />
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etConfirmPassword"
+        android:layout_below="@id/etPassword"
         android:layout_margin="32dp"
         android:textSize="24sp"
         android:textColorHint="@color/white"
         android:background="@color/colorPrimaryDark"
-        android:text="Register"
+        android:text="Login"
         android:textColor="@color/white"/>
 
 </RelativeLayout>
